@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DR-Net</title>
+    <link rel="shortcut icon" href="https://jsd.onmicrosoft.cn/gh/jermainn/cdn@master/project_pages/favicon/DR-Net_1.png" type="image/x-icon">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/gh/jermainn/cdn@master/project_pages/css/comming.css">
+    <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+    <!-- TODO：Add Slider -->
+    <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/gh/jermainn/cdn@master/project_pages/css/slider.css">
+    
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">Two-Stage Framework for Distortion Estimation and Image Restoration in Underwater Imaging</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="https://github.com/jermainn">Jianming Liu</a><sup>1,2,3</sup>,</span>
+                            <span class="author-block">
+                               Congzheng Wang<sup>1,2,3,*</sup>,</span>
+                            <span class="author-block">
+                            Chuncheng Feng<sup>1,2</sup>,
+                            </span>
+                            <span class="author-block">
+                                Lei Liu<sup>1,2</sup>,
+                            </span>
+                            <span class="author-block">
+                                Wanqi Gong<sup>1,2</sup>,
+                            </span>
+                            <br>
+                            <span class="author-block">
+                                Zhibo Chen<sup>1,2</sup>,
+                            </span>
+                            <span class="author-block">
+                                Libin Liao<sup>1,2,3</sup>,
+                            </span>
+                            <span class="author-block">
+                                Chang Feng<sup>1,2,3,*</sup>,
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>National Key Laboratory of Optical Field Manipulation Science and Technology, 
+                                Chinese Academy of Sciences,</span>
+                            <span class="author-block"><sup>2</sup>Institute of Optics and Electronics, 
+                                Chinese Academy of Sciences,</span>
+                            <span class="author-block"><sup>3</sup>University of Chinese Academy of Sciences</span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- Paper Link. -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <!-- Code Link. -->
+                                <!-- <span class="link-block">
+                                    <a href="https://github.com"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span> -->
+                                
+                                <!-- comming-soon-button -->
+                                <span class="link-block">
+                                    <a href="#" class="external-link button is-normal is-rounded is-dark coming-soon-button">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Project</span>
+                                        <span class="coming-soon">
+                                            <span class="tooltip">Coming Soon</span>
+                                            <i class="fas fa-clock"></i>
+                                        </span>
+                                    </a>
+                                </span>
+                                
+                                <!-- /Code Link. -->
+
+                                <!-- Video Link. -->
+                                <!-- <span class="link-block">
+                                    <a href="TODO" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                        <span>Video (Comming Soon)</span>
+                                    </a>
+                                </span> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero teaser">
+        <!--  Image Comparison -->
+        <div class="comparison-container">
+            <div class="image-container" id="slider1">
+                <div class="image-before">
+                    <img src="./static/images/n02676566_11957_before.JPEG" alt="Before Image">
+                </div>
+                <div class="image-after">
+                    <img src="./static/images/n02676566_11957_after.JPEG" alt="After Image">
+                </div>
+                <div class="slider">
+                    <button></button>
+                    <div class="beforeDescription">Before</div>
+                    <div class="afterDescription">After</div>
+                </div>
+            </div>
+
+            <div class="image-container" id="slider2">
+                <div class="image-before">
+                    <img src="./static/images/n04259630_7754_before.JPEG" alt="Before Image 2">
+                </div>
+                <div class="image-after">
+                    <img src="./static/images/n04259630_7754_after.JPEG" alt="After Image 2">
+                </div>
+                <div class="slider">
+                    <button></button>
+                    <div class="beforeDescription">Before</div>
+                    <div class="afterDescription">After</div>
+                </div>
+            </div>
+
+            <div class="image-container" id="slider3">
+                <div class="image-before">
+                    <img src="./static/images/n03065424_29337_before.JPEG" alt="Before Image 2">
+                </div>
+                <div class="image-after">
+                    <img src="./static/images/n03065424_29337_after.JPEG" alt="After Image 2">
+                </div>
+                <div class="slider">
+                    <button></button>
+                    <div class="beforeDescription">Before</div>
+                    <div class="afterDescription">After</div>
+                </div>
+            </div>
+        </div>
+        <!--  Image Comparison end -->
+        <div align="center">
+            <b>The processing results of our mehtod (DR-Net) in Underwater Imaging.</b>
+        </div>
+        <!-- <br style="line-height: 0px;"/> -->
+        <div style="padding-bottom: 8px;"></div>
+
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <!-- <h2 class="title is-3">Results</h2> -->
+                <div class="content has-text-justified">
+                    <div style="text-align: center; vertical-align:middle">
+                        <img src="./static/images/distortion_estimation.png" width="800">
+                        <div align="center">
+                            <b>The results of distortion information estimation of DE-Net, comparing with input images.</b>
+                        </div>
+                        <!-- <img src="./static/images/figure1_b.png" width="800">
+                        <div align="center">
+                            <b>(b) Visual comparison of blind face restoration (BFR) methods on real-world low-quality face images.</b>
+                        </div> -->
+                        <!-- <p>
+                            Comparisons of DiffBIR and state-of-the-art BSR/BFR methods on real-world images. 
+                            Compared to BSR methods, DiffBIR is more effective to (1) generate natural textures; 
+                            (2) reconstruct semantic regions; (3) not erase small details; (4) overcome severe cases. 
+                            Compared to BFR methods, DiffBIR can (1) handle occlusion cases; (2) obtain satisfactory 
+                            restoration beyond facial areas (e.g., headwear, earrings).
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            This paper introduces a two-stage framework, the Distorted Underwater Image Restoration Network (DR-Net), to address the complex degradation of underwater images caused by turbulence, fluctuations, and optical properties of water. 
+                            The first stage employs the Distortion Estimation Network (DE-Net), leveraging a fusion of Transformer and U-Net architectures, to estimate distortion information from degraded images. 
+                            Subsequently, the Image Restoration Generative Adversarial Network (IR-GAN) in the second stage utilizes this estimated distortion information to deblur images and regenerate lost details. 
+                            Qualitative and quantitative evaluations on both synthetic and real image datasets demonstrate the superior performance of DR-Net over traditional methods, showcasing its broader applicability and robustness. 
+                            Our approach restores underwater images from a single frame, improving the retrieval of marine resources and enhancing seabed exploration capabilities. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+
+            <!-- Method. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Method</h2>
+                    <div class="content has-text-justified">
+                        <img src="./static/images/DR-Net_v1.3.png" width="800">
+                        <div align="center">
+                            <b>DR-Net Architecture</b>
+                        </div>
+                        <p>
+                            The two-stage architecture of our DR-Net: 
+                            1) distorted information estimation network (DE-Net): estimation of distortion/perturbation information
+                            from the degraded underwater images, 
+                            and 2) underwater image restoration network based-GAN (IR-GAN): restoration of image details and reconstruction of potentially lost information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Method. -->
+
+            <!-- Paper video. -->
+            <!-- <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Video</h2>
+                    <div class="publication-video">
+                        <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div> -->
+            <!--/ Paper video. -->
+
+            <!-- Results. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Results</h2>
+                    <div class="content has-text-justified">
+                        <img src="./static/images/compare_liset_v1.1.png" width="800">
+                        <div align="center">
+                            <b>(a) Visual comparison with learning based method and our DR-Net on LiSet for underwater distorted image restoration.</b>
+                            <b> </b>
+                        </div>
+                        <img src="./static/images/compare_others_v1.2.png" width="800">
+                        <div align="center">
+                            <b>(b) Visual comparison with the state-of-the-arts on synthetic and real captured datasets.</b>
+                        </div>
+                    </div>
+
+                    <!-- <h3 class="subtitle title is-4">Related Datasets</h3> -->
+                    <h3 class="subtitle title is-4">Downloads</h3>
+                    <ul class="left-aligned">
+                        <li>The underwater distortion image can be downloaded from <a href="https://cseweb.ucsd.edu/~viscomp/projects/WACV18Water/">Datasets</a> 
+                            based on ImageNet dataset, also you can download the set from our <a href="https://pan.baidu.com/s/1Wn_Ark_ycpoD8MFuhPuvwg?pwd=jcyc">Baidu Netdisk</a> 
+                            or <a href="https://drive.google.com/drive/folders/15G36ZsbY9Xfah84Ga4VilAr7zJqIkf8X?usp=drive_link">Google Drive</a>.
+                            The  origional ImageNet set is from <a href="http://www.image-net.org/">ImageNet</a>.</li>
+                        <li>TianDataset can be obtained in <a href="https://www.cs.cmu.edu/~ILIM/projects/IM/water/research_water.html">SeeingThroughWater</a>. </li>
+                        <li>Other Datasets: <a href="https://pan.baidu.com/s/1JjPVHtpNRGg7Jpo9Y2EA9A?pwd=9rhe">Baidu Netdisk</a> | 
+                            <a herf="https://drive.google.com/drive/folders/1TZg_GbTenDaRi3bjLIidWnaWA7XZ3nKf?usp=drive_link">Google Drive</a> . </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/ Results. -->
+        </div>
+    </section>
+    
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <!-- <h2 class="title">BibTeX</h2>
+            <pre><code>@article{2023diffbir,
+                author    = {Xinqi Lin, Jingwen He, Ziyan Chen, Zhaoyang Lyu, Ben Fei, Bo Dai, Wanli Ouyang, Yu Qiao, Chao Dong},
+                title     = {DiffBIR: Towards Blind Image Restoration with Generative Diffusion Prior},
+                journal   = {arxiv},
+                year      = {2023},
+            }</code></pre> -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="columns is-centered">
+            <div class="content">
+                <p>
+                    This template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies's webpage</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <!-- <script src="./static/js/slider.js"></script> -->
+    <script src="https://jsd.onmicrosoft.cn/gh/jermainn/cdn@master/project_pages/js/slider.js"></script>
+    <!-- <script defer src="./static/js/fontawesome.all.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- <script src="https://jsd.onmicrosoft.cn/gh/jermainn/cdn@master/project_pages/js/disableContextMenu.js"></script> -->
+</body>
+
+</html>
